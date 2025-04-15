@@ -1,0 +1,4 @@
+SELECT * 
+FROM produtos
+ORDER BY id
+LIMIT 2;

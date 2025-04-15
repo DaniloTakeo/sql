@@ -1,0 +1,3 @@
+SELECT * 
+FROM pagamentos
+WHERE valor > 100.00;
