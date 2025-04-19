@@ -19,6 +19,23 @@ O banco simula um sistema de vendas com as seguintes entidades principais:
 
 ---
 
+## 🔐 Controle de Acesso
+
+### Básico:
+- Criação de usuários e roles
+- Atribuição de permissões simples
+
+### Avançado:
+Scripts na pasta `access_control/advanced/` demonstram como aplicar:
+- Permissões por coluna
+- Controle de acesso via *views*
+- Funções com `SECURITY DEFINER`
+- Permissões por schema
+- Privilégios padrão (default privileges)
+- Consultas de auditoria de permissões
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
