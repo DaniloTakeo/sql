@@ -64,6 +64,7 @@ Em breve: tratamento de exceções com `EXCEPTION`, uso de `INOUT`, validações
 - inserts/: Inserção de dados iniciais
 - access_control/: Criação de usuários e permissões (opcional)
 - select_queries_*: Consultas para prática (do básico ao avançado)
+- procedures/: Stored procedures e scripts de call
 
 #### 3. Utilize um SGBD compatível (PostgreSQL, por exemplo) para executar os scripts.
 
