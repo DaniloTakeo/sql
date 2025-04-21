@@ -36,6 +36,20 @@ Scripts na pasta `access_control/advanced/` demonstram como aplicar:
 
 ---
 
+## 🔄 Procedures
+
+Scripts armazenados em `procedures/` encapsulam lógicas de negócio como:
+
+- `criar_pedido.sql`: Cria um novo pedido para um cliente e forma de pagamento.
+- `atualizar_preco_produto.sql`: Atualiza o preço de um produto.
+- `inativar_cliente.sql`: Marca um cliente como inativo.
+- `registrar_pagamento.sql`: Registra o pagamento de um pedido.
+
+A pasta `procedures/call_scripts/` contém scripts de exemplo com `CALL` para testar cada procedure.
+
+Em breve: tratamento de exceções com `EXCEPTION`, uso de `INOUT`, validações e lógica mais elaborada.
+
+---
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
