@@ -50,6 +50,30 @@ A pasta `procedures/call_scripts/` contém scripts de exemplo com `CALL` para te
 Em breve: tratamento de exceções com `EXCEPTION`, uso de `INOUT`, validações e lógica mais elaborada.
 
 ---
+
+## 🧠 `functions/` – Funções definidas pelo usuário
+
+Esta pasta contém funções SQL criadas para encapsular lógica de negócio e facilitar consultas reutilizáveis.
+
+#### 🧩 Exemplos incluídos:
+
+- `get_total_vendas_cliente.sql`  
+  Retorna o total de vendas (soma dos pedidos) realizados por um cliente.
+
+- `get_valor_total_pedido.sql`  
+  Retorna o valor total de um pedido somando os itens e seus preços unitários.
+
+- `get_produtos_por_categoria.sql`  
+  Retorna os nomes dos produtos pertencentes a uma determinada categoria.
+
+- `get_valor_total_pedido_seguro.sql`  
+  Versão da função com validação: lança exceção se o pedido não existir.
+
+- `get_total_vendas_cliente_validador.sql`  
+  Valida se o cliente está ativo antes de retornar a soma de seus pedidos.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
@@ -78,6 +102,11 @@ Em breve: tratamento de exceções com `EXCEPTION`, uso de `INOUT`, validações
 - Entender como controlar acessos e permissões no banco
 
 ---
+
+#### 💡 Observações:
+- As funções, procedures e triggers utilizam a linguagem `plpgsql`.
+- Algumas funções lançam exceções (`RAISE EXCEPTION`) para validar dados antes de processar.
+- Scripts de execução estão localizados na subpasta `calls/`.
 
 ## ✍️ Autor:
 Danilo Takeo Kanizawa
