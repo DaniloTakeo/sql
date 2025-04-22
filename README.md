@@ -51,7 +51,7 @@ Em breve: tratamento de exceções com `EXCEPTION`, uso de `INOUT`, validações
 
 ---
 
-## 🧠 `functions/` – Funções definidas pelo usuário
+## 🧠 Functions – Funções definidas pelo usuário
 
 Esta pasta contém funções SQL criadas para encapsular lógica de negócio e facilitar consultas reutilizáveis.
 
