@@ -74,6 +74,26 @@ Esta pasta contém funções SQL criadas para encapsular lógica de negócio e f
 
 ---
 
+## 🔔 Triggers – Gatilhos automáticos de banco de dados
+
+Esta pasta contém exemplos de triggers (gatilhos) em SQL que executam automaticamente ações após eventos como inserção, atualização ou exclusão de registros.
+
+#### 🧩 Exemplos incluídos:
+
+- `auditoria_precos`  
+  Trigger que audita mudanças de preço na tabela `produtos`, registrando o preço antigo, o novo e a data da alteração.
+
+- `atualizar_valor_total`  
+  Trigger que atualiza automaticamente o campo `valor_total` da tabela `pedidos` sempre que itens forem adicionados, removidos ou alterados.
+
+- `bloquear_delete_cliente`  
+  Trigger que impede a exclusão de clientes que possuem pedidos associados.
+
+- `log_geral`  
+  Trigger genérica que registra ações (inserções, atualizações, deleções) em uma tabela de log, incluindo o tipo da operação e o ID do registro afetado.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
