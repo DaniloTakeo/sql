@@ -94,6 +94,34 @@ Esta pasta contém exemplos de triggers (gatilhos) em SQL que executam automatic
 
 ---
 
+### 👀 Views – Visões virtuais sobre os dados
+
+Esta pasta contém exemplos de *views* (visões) SQL, que são consultas armazenadas no banco de dados e se comportam como tabelas virtuais.
+
+As views são utilizadas para:
+- Simplificar consultas complexas
+- Encapsular lógica de negócio
+- Padronizar e reutilizar trechos de SQL
+- Restringir e organizar o acesso aos dados
+
+#### 📄 Arquivos disponíveis:
+
+- `view_pedidos_com_clientes.sql`  
+  Exibe os pedidos junto com os dados do cliente correspondente.
+
+- `view_estoque_baixo.sql`  
+  Lista produtos cujo estoque está abaixo de um determinado limite (ex: < 10 unidades).
+
+- `view_vendas_totais_por_produto.sql`  
+  Mostra a quantidade total vendida de cada produto com base nos itens de pedido.
+
+#### 🛠️ Observações:
+- Views não armazenam dados, apenas o resultado da consulta.
+- Podem ser utilizadas em JOINs e subqueries como qualquer tabela.
+- Algumas views podem ser utilizadas para controle de acesso, permitindo exibir apenas colunas específicas.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
