@@ -94,7 +94,7 @@ Esta pasta contém exemplos de triggers (gatilhos) em SQL que executam automatic
 
 ---
 
-### 👀 Views – Visões virtuais sobre os dados
+## 👀 Views – Visões virtuais sobre os dados
 
 Esta pasta contém exemplos de *views* (visões) SQL, que são consultas armazenadas no banco de dados e se comportam como tabelas virtuais.
 
