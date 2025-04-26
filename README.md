@@ -120,6 +120,31 @@ As views são utilizadas para:
 - Podem ser utilizadas em JOINs e subqueries como qualquer tabela.
 - Algumas views podem ser utilizadas para controle de acesso, permitindo exibir apenas colunas específicas.
 
+### ⚡ Indexes – Índices para otimização de consultas
+
+Esta pasta contém exemplos de criação de *indexes* (índices) no banco de dados para melhorar a performance de consultas.
+
+Índices são estruturas que permitem localizar linhas de forma rápida, especialmente úteis em colunas usadas em filtros (`WHERE`), junções (`JOIN`) e ordenações (`ORDER BY`).
+
+#### 📄 Arquivos disponíveis:
+
+- `index_cliente_email.sql`  
+  Cria um índice para acelerar buscas por e-mail dos clientes.
+
+- `index_produto_nome.sql`  
+  Cria um índice para otimizar consultas pelo nome dos produtos.
+
+- `index_pedido_data.sql`  
+  Índice para consultas baseadas na data do pedido.
+
+- `index_multicoluna_pedidos.sql`  
+  Índice combinando `cliente_id` e `data_pedido`, útil para relatórios filtrados por cliente e data.
+
+#### 🛠️ Observações:
+- Índices melhoram a performance de leitura, mas podem tornar operações de escrita (`INSERT`, `UPDATE`, `DELETE`) mais lentas.
+- Índices ocupam espaço adicional no disco.
+- Devem ser usados com critério para evitar degradação de performance geral.
+
 ---
 
 ## 🚀 Como usar
