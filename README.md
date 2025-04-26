@@ -120,7 +120,9 @@ As views são utilizadas para:
 - Podem ser utilizadas em JOINs e subqueries como qualquer tabela.
 - Algumas views podem ser utilizadas para controle de acesso, permitindo exibir apenas colunas específicas.
 
-### ⚡ Indexes – Índices para otimização de consultas
+---
+
+## ⚡ Indexes – Índices para otimização de consultas
 
 Esta pasta contém exemplos de criação de *indexes* (índices) no banco de dados para melhorar a performance de consultas.
 
