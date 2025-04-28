@@ -149,6 +149,33 @@ Esta pasta contém exemplos de criação de *indexes* (índices) no banco de dad
 
 ---
 
+## 🔄 Transactions – Transações em SQL
+
+Esta pasta contém exemplos de uso de transações para garantir a atomicidade e a consistência das operações no banco de dados.
+
+Transações garantem que um conjunto de operações SQL sejam tratadas como uma única unidade: ou todas as alterações são aplicadas, ou nenhuma é.
+
+#### 📄 Arquivos disponíveis:
+
+- `basic_transaction_commit.sql`  
+  Exemplo simples de transação finalizada com `COMMIT`.
+
+- `basic_transaction_rollback.sql`  
+  Exemplo de transação que utiliza `ROLLBACK` em caso de erro.
+
+- `transaction_transfer_funds.sql`  
+  Simulação de transferência de fundos entre duas contas usando transações.
+
+- `transaction_with_error_handling.sql`  
+  Exemplo de transação com controle básico de erro para garantir rollback seguro.
+
+#### 🛠️ Observações:
+- Transações seguem as propriedades ACID: Atomicidade, Consistência, Isolamento e Durabilidade.
+- É importante utilizar transações para garantir integridade em operações que envolvam múltiplas tabelas ou etapas críticas.
+- A sintaxe de tratamento de erro pode variar conforme o sistema gerenciador de banco de dados (MySQL, PostgreSQL, SQL Server, etc.).
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
