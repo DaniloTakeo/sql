@@ -176,6 +176,31 @@ Transações garantem que um conjunto de operações SQL sejam tratadas como uma
 
 ---
 
+## 🔁 Cursores em SQL
+
+Esta pasta contém exemplos de uso de cursores, que permitem iterar linha a linha sobre o resultado de uma consulta e aplicar lógica procedural.
+
+Cursores são úteis em situações onde não é possível realizar toda a lógica desejada apenas com SQL declarativo, mas devem ser utilizados com cautela devido ao seu impacto em performance.
+
+#### 📄 Arquivos disponíveis:
+
+- `basic_cursor_example.sql`  
+  Exemplo básico de um cursor iterando sobre clientes e exibindo seus nomes.
+
+- `cursor_with_if_condition.sql`  
+  Exemplo de cursor com lógica condicional para identificar clientes com saldo negativo e gerar alertas.
+
+- `cursor_to_update_table.sql`  
+  Exemplo de cursor utilizado para atualizar valores de uma tabela de pedidos com acréscimo percentual.
+
+#### 🛠️ Observações:
+- Cursores seguem a estrutura: `DECLARE`, `OPEN`, `FETCH`, `LOOP`, `CLOSE`.
+- É necessário declarar um `HANDLER` para detectar o fim do cursor (`NOT FOUND`).
+- Caso o SGBD permita, é possível usar blocos `BEGIN ... END` para lógica mais complexa.
+- Quando possível, é preferível resolver o problema com comandos SQL vetorizados (`UPDATE`, `JOIN`, `CTE`), que costumam ter melhor desempenho.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
