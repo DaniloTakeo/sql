@@ -201,6 +201,29 @@ Cursores são úteis em situações onde não é possível realizar toda a lógi
 
 ---
 
+## 🧪 Temporary Tables – Tabelas Temporárias
+
+Esta pasta contém exemplos de uso de tabelas temporárias, estruturas úteis para armazenar dados intermediários durante a execução de scripts SQL. Elas são descartadas automaticamente ao final da sessão do banco de dados, não afetando os dados reais da aplicação.
+
+#### 📄 Arquivos disponíveis:
+
+- `basic_temp_table.sql`  
+  Cria uma tabela temporária com clientes ativos e realiza uma simples seleção.
+
+- `temp_table_with_join.sql`  
+  Cria uma tabela temporária com pedidos de 2023 e realiza um `JOIN` com a tabela de clientes para exibir o nome e o valor dos pedidos.
+
+- `temp_table_for_reporting.sql`  
+  Cria uma tabela temporária para consolidar vendas por categoria de produto, útil para relatórios de negócio.
+
+#### 🛠️ Observações:
+- As tabelas temporárias são específicas da sessão e são automaticamente descartadas ao seu fim.
+- É possível criar várias tabelas temporárias com o mesmo nome em sessões diferentes.
+- Muito úteis para ETL, cálculos intermediários e simplificação de consultas complexas.
+- Suporte e sintaxe podem variar entre SGBDs (MySQL, PostgreSQL, SQL Server).
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
