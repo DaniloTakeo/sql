@@ -224,6 +224,30 @@ Esta pasta contém exemplos de uso de tabelas temporárias, estruturas úteis pa
 
 ---
 
+## 🧠 Window Functions – Funções de Janela
+
+Esta pasta contém exemplos de uso das funções de janela (window functions), que permitem realizar cálculos agregados ao longo de um conjunto de linhas relacionadas à linha atual, mantendo todas as linhas no resultado.
+
+#### 📄 Arquivos disponíveis:
+
+- `row_number_example.sql`  
+  Atribui um número sequencial a cada cliente com base na ordenação por nome.
+
+- `running_total_example.sql`  
+  Calcula o total acumulado de pedidos por cliente, ordenado pela data do pedido.
+
+- `partition_by_example.sql`  
+  Calcula a média de preços de produtos dentro de cada categoria (`PARTITION BY`).
+
+#### 🛠️ Observações:
+- Funções de janela utilizam a cláusula `OVER()` para definir sua janela de atuação.
+- A cláusula `PARTITION BY` divide os dados em grupos lógicos.
+- A cláusula `ORDER BY` dentro de `OVER()` define a ordem das linhas dentro da partição.
+- Exemplos comuns incluem: `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `SUM`, `AVG`, `LAG`, `LEAD`.
+- São ideais para análises mais sofisticadas, como rankings, comparações entre linhas e totais acumulados.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
