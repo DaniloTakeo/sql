@@ -248,6 +248,29 @@ Esta pasta contém exemplos de uso das funções de janela (window functions), q
 
 ---
 
+### 🧩 CTEs – Common Table Expressions
+
+Esta pasta contém exemplos de Expressões de Tabela Comum (CTEs), que permitem definir consultas temporárias nomeadas reutilizáveis dentro de comandos SQL, tornando as consultas mais legíveis e organizadas.
+
+#### 📄 Arquivos disponíveis:
+
+- `basic_cte.sql`  
+  Define uma CTE para filtrar clientes ativos e realiza uma seleção adicional.
+
+- `multiple_ctes.sql`  
+  Utiliza múltiplas CTEs para consultar pedidos de 2023 e combinar com itens e produtos.
+
+- `recursive_cte.sql`  
+  Demonstra o uso de CTE recursiva para navegar em hierarquias de categorias.
+
+#### 🛠️ Observações:
+- CTEs são definidas com a cláusula `WITH`.
+- Permitem evitar subqueries repetidas e melhoram a clareza do código.
+- `WITH RECURSIVE` permite navegar estruturas hierárquicas, como árvores de categorias.
+- Podem ser usadas com `SELECT`, `INSERT`, `UPDATE` e `DELETE`.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
