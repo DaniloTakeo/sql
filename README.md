@@ -248,7 +248,7 @@ Esta pasta contém exemplos de uso das funções de janela (window functions), q
 
 ---
 
-### 🧩 CTEs – Common Table Expressions
+## 🧩 CTEs – Common Table Expressions
 
 Esta pasta contém exemplos de Expressões de Tabela Comum (CTEs), que permitem definir consultas temporárias nomeadas reutilizáveis dentro de comandos SQL, tornando as consultas mais legíveis e organizadas.
 
