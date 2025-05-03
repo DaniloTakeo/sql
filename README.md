@@ -271,6 +271,31 @@ Esta pasta contém exemplos de Expressões de Tabela Comum (CTEs), que permitem 
 
 ---
 
+## 🔍 Subqueries – Subconsultas em SQL
+
+Esta pasta contém exemplos de subqueries, que são consultas aninhadas usadas para filtrar, calcular ou estruturar dados dentro de outras instruções SQL.
+
+#### 📄 Arquivos disponíveis:
+
+- `subquery_in_where.sql`  
+  Filtra clientes com base em IDs retornados por uma subquery que seleciona pedidos de 2023.
+
+- `subquery_in_select.sql`  
+  Usa uma subquery na cláusula `SELECT` para contar o número de pedidos de cada cliente.
+
+- `subquery_in_from.sql`  
+  Utiliza uma subquery como tabela derivada na cláusula `FROM` para calcular a média de pedidos por cidade.
+
+- `correlated_subquery.sql`  
+  Subquery correlacionada que verifica a existência de pedidos com valor acima de 1000 por cliente.
+
+#### 🛠️ Observações:
+- Subqueries podem aparecer em `SELECT`, `FROM`, `WHERE` e `HAVING`.
+- Subqueries correlacionadas referenciam colunas da query externa.
+- Oferecem legibilidade, mas em grandes volumes, o uso de `JOIN` pode ser mais performático.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
