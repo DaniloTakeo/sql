@@ -296,6 +296,34 @@ Esta pasta contém exemplos de subqueries, que são consultas aninhadas usadas p
 
 ---
 
+## 🔄 Pivot e Unpivot – Transformações Pivot e Unpivot
+
+Esta pasta contém exemplos de como transformar dados de linhas para colunas (pivot) e de colunas para linhas (unpivot), úteis em relatórios e análises.
+
+#### 📄 Arquivos disponíveis:
+
+- `pivot_case.sql`  
+  Realiza pivot manual com `CASE` para transformar valores mensais em colunas.
+
+- `pivot_postgresql_crosstab.sql`  
+  Utiliza a função `crosstab` da extensão `tablefunc` no PostgreSQL para pivotar dinamicamente.
+
+- `unpivot_union.sql`  
+  Simula unpivot usando `UNION ALL` para transformar colunas como `email` e `telefone` em linhas.
+
+- `unpivot_json_each.sql`  
+  Exemplo com `jsonb_each_text` para unpivot dinâmico em PostgreSQL.
+
+#### 🛠️ Observações:
+
+- `PIVOT` converte valores distintos em colunas.
+- `UNPIVOT` converte colunas em registros de linhas.
+- O suporte depende do SGBD:
+  - **SQL Server** possui suporte nativo a `PIVOT/UNPIVOT`.
+  - **PostgreSQL** requer extensão `tablefunc` ou uso de `CASE`, `jsonb_each`, etc.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
