@@ -324,6 +324,36 @@ Esta pasta contém exemplos de como transformar dados de linhas para colunas (pi
 
 ---
 
+## 🧩 JSON Functions – Funções JSON em SQL
+
+Esta pasta contém exemplos de como manipular e consultar dados armazenados no formato JSON/JSONB diretamente no banco de dados.
+
+#### 📄 Arquivos disponíveis:
+
+- `json_extract.sql`  
+  Consulta e extrai campos simples de objetos JSON utilizando `->` e `->>`.
+
+- `json_array_elements.sql`  
+  Itera sobre arrays dentro do JSON com `json_array_elements_text`.
+
+- `jsonb_set_update.sql`  
+  Atualiza um valor específico dentro de um objeto JSONB utilizando `jsonb_set`.
+
+- `json_object_keys_filter.sql`  
+  Lista todas as chaves e valores do JSON e aplica filtros dinâmicos com `jsonb_each_text`.
+
+#### 🛠️ Observações:
+
+- `->` acessa o valor JSON (formato nativo).
+- `->>` acessa o valor como texto.
+- `json_array_elements_*` permite trabalhar com listas dentro do JSON.
+- `jsonb_each_text` permite iterar por chave/valor em objetos JSON.
+- `jsonb_set` atualiza um valor sem substituir todo o objeto.
+
+> Compatível principalmente com **PostgreSQL**. Outros SGBDs possuem suporte parcial ou com funções diferentes.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
