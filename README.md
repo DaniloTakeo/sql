@@ -354,6 +354,31 @@ Esta pasta contém exemplos de como manipular e consultar dados armazenados no f
 
 ---
 
+### 🧠 CTEs Avançadas – Common Table Expressions (CTEs) Avançadas
+
+Esta pasta contém exemplos de CTEs recursivas utilizadas para resolver problemas envolvendo hierarquias, iteração e construção de sequências.
+
+#### 📄 Arquivos disponíveis:
+
+- `recursive_hierarchy.sql`  
+  Percorre uma hierarquia de funcionários usando `WITH RECURSIVE` para listar todos os níveis de subordinação.
+
+- `recursive_sequence.sql`  
+  Gera uma sequência numérica de 1 até 10 utilizando uma CTE recursiva.
+
+- `recursive_with_limit.sql`  
+  Conta de 5 até 0 usando recursão controlada.
+
+#### 🛠️ Observações:
+
+- CTEs recursivas são divididas em duas partes:
+  - **Caso base**: a query inicial.
+  - **Parte recursiva**: referencia a própria CTE e define a lógica de progressão.
+- Utilize `WHERE` ou `LIMIT` para evitar loops infinitos.
+- Suporte robusto em **PostgreSQL**, **MySQL 8+**, **SQL Server** (sem `RECURSIVE`) e **Oracle 11g+`.
+
+---
+
 ## 🚀 Como usar
 
 #### 1. Clone este repositório:
