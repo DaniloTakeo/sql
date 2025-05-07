@@ -354,7 +354,7 @@ Esta pasta contém exemplos de como manipular e consultar dados armazenados no f
 
 ---
 
-### 🧠 CTEs Avançadas – Common Table Expressions (CTEs) Avançadas
+## 🧠 CTEs Avançadas – Common Table Expressions (CTEs) Avançadas
 
 Esta pasta contém exemplos de CTEs recursivas utilizadas para resolver problemas envolvendo hierarquias, iteração e construção de sequências.
 
